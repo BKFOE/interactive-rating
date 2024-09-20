@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+@layer components {
+.card {
+    @apply bg-gradient-to-b from-neutral-darkBlue/100 to-neutral-darkBlue/30 xxs:flex flex-col xxs:max-w-80 sm:max-w-[334px] xxs:mx-auto xxs:h-fit p-6 rounded-3xl 
+}
+}
