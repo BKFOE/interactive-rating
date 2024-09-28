@@ -72,7 +72,7 @@ npm run dev
 ### What I learned
 Initially, when planning I wanted to use JQuery with React but that is bad practice, so I used the DOM and vanilla javascript to create the behavior in the card. DOM worked better in this instance despite being more verbose and complex. 
 
-I apporached this by thinking through my end result. I knew it required the user having the ability to select a rating and once submitted a new card is shown with the selected rating. 
+I approached this by thinking through my end result. I knew it required the user to have the ability to select a rating and once submitted a new card is shown with the selected rating. 
 
 //const [showContent, setShowContent] = useState(false);
 //const [rating, setRating] = useState(null);
@@ -80,12 +80,13 @@ I apporached this by thinking through my end result. I knew it required the user
 //const handleSubmit = (e) => {
     e.preventDefault();
     if (rating !== null) { // Rating is submitted 
-      setShowContent(true); // Hide original card and show the SubmitCard
+      setShowContent(true); // Hide the original card and show the SubmitCard
     }
 
   };
 
   I used the map function to iterate through the different ratings and assign the value to the key.
+  
   // {[1, 2, 3, 4, 5].map((num) => ( // Rating array that we use the map function to iterate through and store value  
           <button 
             key={num}
